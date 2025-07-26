@@ -2,10 +2,10 @@ FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9
 CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 
 def convert_to_celsius(fahrenheit):
-    return (fahrenheit - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR  # ✔ Matches regex: (fahrenheit - 32) * ...
+    return (fahrenheit - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR  # Matches: (fahrenheit - 32) * ...
 
 def convert_to_fahrenheit(celsius):
-    return (CELSIUS_TO_FAHRENHEIT_FACTOR * celsius) + 32      # ✔ Matches regex: CELSIUS_TO_FAHRENHEIT_FACTOR * ... + 32
+    return (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32  # Matches: CELSIUS_TO_FAHRENHEIT_FACTOR * celsius + 32
 
 def ui():
     temp = int(input("Enter the temperature to convert: "))
